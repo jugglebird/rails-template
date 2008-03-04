@@ -1,0 +1,23 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: template_development
+  username: root
+  password: edwmCp9L2fAnv4Xi2bky34jn
+  host: localhost
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: template_test
+  username: root
+  password: edwmCp9L2fAnv4Xi2bky34jn
+  host: localhost
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: template_production
+  username: root
+  password: edwmCp9L2fAnv4Xi2bky34jn
+  host: localhost

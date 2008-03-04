@@ -1,0 +1,16 @@
+I've gotten weary of starting a Rails project and always having to go
+through the same 500 steps to get it set up 'just right'. So this is
+my start at a Rails project template.
+
+It is populated with the following:
+
+Component       Version     Notes
+---------       -------     -----
+Rails           2.0.2       frozen in vendor
+
+RSpec           1.1.3       http://rspec.info
+query_reviewer              http://code.google.com/p/query-reviewer/
+xss_terminate               http://code.google.com/p/xssterminate/
+textmate_footnotes          http://macromates.com/svn/Bundles/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/plugins/footnotes-edge
+
+blueprintcss    0.7.1       http://code.google.com/p/blueprintcss/
