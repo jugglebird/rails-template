@@ -8,3 +8,24 @@
   display: inline;
   padding: 0.5em;
 }
+
+.header-box {
+  border: 1px solid #BEDCE7;
+  background-color: #e5ecf9;
+}
+.footer-box {
+  border: 1px solid #BEDCE7;
+  background-color: #e5ecf9;
+}
+
+#main_content,
+#sidebar {
+  margin-top: 1em;
+}
+
+#header-inner,
+#sidebar-inner,
+#footer-inner,
+#main_content-inner {
+  padding: 0 10px;
+}

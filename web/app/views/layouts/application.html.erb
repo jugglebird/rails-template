@@ -24,40 +24,42 @@
 
   <div class="container">
 
-  	<div class="span-24" id="header">
-
-  	  <h1><%= link_to 'Home', home_path %></h1>
-      <%= render :partial => 'shared/navigation' %>
-  	  <hr />
-
+  	<div class="span-24 header-box" id="header">
+  	  <div id="header-inner">
+    	  <h1><%= link_to 'Home', home_path %></h1>
+        <%= render :partial => 'shared/navigation' %>
+  	  </div>
   	</div>
 	
   	<div class="span-24">
-
   	  <% flash.each do |key, msg| %>
         <%= content_tag(:div, msg, :class => key) %>
       <% end %>
-
   	</div>
 
   	<div class="span-24">
 
-  	  <div  id="main_content" class="span-18 first">
-    		<%= yield %>
+  	  <div  id="main_content" class="span-18 first showgrid">
+  	    <div id="main_content-inner">
+    	  	<%= yield %>
+  	  	</div>
   	  </div>
 
-  	  <div id="sidebar" class="span-6 last">
-  	    <%= (sidebar = yield :sidebar) ? sidebar : render(:partial => 'shared/sidebar') %>
+  	  <div id="sidebar" class="span-6 last showgrid">
+  	    <div id="sidebar-inner">
+  	      <%= (sidebar = yield :sidebar) ? sidebar : render(:partial => 'shared/sidebar') %>
+  	    </div>
   	  </div>
 
   	</div>
 
-    <div class="span-24" id="footer">
+    <div class="span-24 footer-box" id="footer">
 
-  	  <hr />
-      <p>
-        Footer, links, and copyright information
-      </p>
+  	  <div id="footer-inner">
+        <p>
+          Footer, links, and copyright information
+        </p>
+      </div>
 
     </div>
   </div>
