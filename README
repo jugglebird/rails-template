@@ -8,9 +8,10 @@ Component       Version     Notes
 ---------       -------     -----
 Rails           2.0.2       frozen in vendor
 
-RSpec           1.1.3       http://rspec.info
 query_reviewer              http://code.google.com/p/query-reviewer/
-xss_terminate               http://code.google.com/p/xssterminate/
+RSpec           1.1.3       http://rspec.info
 textmate_footnotes          http://macromates.com/svn/Bundles/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/plugins/footnotes-edge
+will_paginate               http://github.com/mislav/will_paginate/tree/master
+xss_terminate               http://code.google.com/p/xssterminate/
 
 blueprintcss    0.7.1       http://code.google.com/p/blueprintcss/
