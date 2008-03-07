@@ -22,45 +22,47 @@
 </head>
 <body>
 
-  <div class="container">
+  <div id="header">
+    <div id="subheader" class="fixed">  
+  	  <h1><%= link_to 'Home', home_path %></h1>
+      <%= render :partial => 'shared/navigation' %>
+    </div>
+  </div>
 
-  	<div class="span-24 header-box" id="header">
-  	  <div id="header-inner">
-    	  <h1><%= link_to 'Home', home_path %></h1>
-        <%= render :partial => 'shared/navigation' %>
-  	  </div>
-  	</div>
-	
-  	<div class="span-24">
-  	  <% flash.each do |key, msg| %>
-        <%= content_tag(:div, msg, :class => key) %>
-      <% end %>
-  	</div>
+  <div id="wrap">
+    <div class="container">
 
-  	<div class="span-24">
+    	<div class="span-24">
+    	  <% flash.each do |key, msg| %>
+          <%= content_tag(:div, msg, :class => key) %>
+        <% end %>
+    	</div>
 
-  	  <div  id="main_content" class="span-18 first showgrid">
-  	    <div id="main_content-inner">
-    	  	<%= yield %>
-  	  	</div>
-  	  </div>
+    	<div class="span-24">
 
-  	  <div id="sidebar" class="span-6 last showgrid">
-  	    <div id="sidebar-inner">
-  	      <%= (sidebar = yield :sidebar) ? sidebar : render(:partial => 'shared/sidebar') %>
-  	    </div>
-  	  </div>
+    	  <div  id="main_content" class="span-18 first showgrid">
+    	    <div id="main_content-inner">
+      	  	<%= yield %>
+    	  	</div>
+    	  </div>
 
-  	</div>
+    	  <div id="sidebar" class="span-6 last showgrid">
+    	    <div id="sidebar-inner">
+    	      <%= (sidebar = yield :sidebar) ? sidebar : render(:partial => 'shared/sidebar') %>
+    	    </div>
+    	  </div>
 
-    <div class="span-24 footer-box" id="footer">
+    	</div>
 
-  	  <div id="footer-inner">
-        <p>
-          Footer, links, and copyright information
-        </p>
-      </div>
+    </div>
+    
+  </div>
 
+  <div id="footer">
+	  <div id="subfooter" class="fixed">
+      <p>
+        Footer, links, and copyright information
+      </p>
     </div>
   </div>
 

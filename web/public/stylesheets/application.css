@@ -1,21 +1,38 @@
 /* application specific css and blueprint overrides go here... */
 
-#navigation ul {
-  list-style-type: none;
+body {
+  margin-top: 0;
+  background-color: #eee;
 }
 
-#navigation li {
-  display: inline;
-  padding: 0.5em;
+#header {
+  margin: 0px auto;
+  height: 82px; 
+  background-color: #eee;
+  border-bottom: 4px solid #ccc;
 }
 
-.header-box {
-  border: 1px solid #BEDCE7;
-  background-color: #e5ecf9;
+#footer {
+  margin: 0px auto;
+  height: 62px; 
+  background-color: #eee;
+  border-top: 4px solid #ccc;
 }
-.footer-box {
-  border: 1px solid #BEDCE7;
-  background-color: #e5ecf9;
+
+#subheader, #subfooter {
+  margin: 0pt auto;
+  padding: 0px 10px;
+  position: relative;
+  width: 930px;
+}
+
+#wrap {
+  width: 100%;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #fff;
 }
 
 #main_content,
@@ -23,9 +40,16 @@
   margin-top: 1em;
 }
 
-#header-inner,
 #sidebar-inner,
-#footer-inner,
 #main_content-inner {
   padding: 0 10px;
+}
+
+#navigation ul {
+  list-style-type: none;
+}
+
+#navigation li {
+  display: inline;
+  padding: 0.5em;
 }
