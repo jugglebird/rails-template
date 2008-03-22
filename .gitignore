@@ -1,2 +1,4 @@
-web/log/*.log
-web/tmp/*
+log/*.log
+tmp/*
+.DS_Store
+

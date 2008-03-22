@@ -3,6 +3,11 @@
 body {
   margin-top: 0;
   background-color: #eee;
+/*  font-family: "Trebuchet MS",Arial,Helvitica,sans-serif*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bookman Old Style","Book Antiqua","Georgia","Times New Roman",Times,serif;
 }
 
 #header {
